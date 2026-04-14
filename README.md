@@ -1,22 +1,48 @@
-![动画生涯个人喜好表](https://github.com/itorr/anime-grid/blob/master/simple.jpg?raw=true)
+﻿# 动画生涯个人喜好表生成器
 
-# 🤖「动画生涯个人喜好表生成器」
+这是一个基于原版 `anime-grid` 改造的前端小工具。  
 
-一个生成 动画生涯个人喜好表 的在线网页工具
+## 在线版本
 
-230211: 新增超多个格子的 [扩展版](https://lab.magiconch.com/anime-grid/ex.html)
+- 标准版：`html/index.html`
+- 扩展版：`html/ex.html`
 
-## 地址 
+直接用浏览器打开对应 HTML 文件即可本地使用。
 
-https://lab.magiconch.com/anime-grid/
+## 这次改动后的主要功能
 
-## 衍生
- - 声豚生涯个人喜好表[@摇曳甜梨](https://weibo.com/3126255377/MsvYizq48)  http://202.43.145.99:8080/sy-grid/index.html
-## GitHub
-https://github.com/itorr/anime-grid
+- 支持把每个格子做成 `Emoji 猜番` 形式。
+- 支持插入 emoji和文本框，并在格子内自由拖动、缩放、置顶、删除。
+- 支持填写答案备注，并可一键切换 `显示答案 / 隐藏答案`，并且可以导出两种版本的图片。
+- 支持自定义格子数量调整格子顺序以及修改格子标题。
+- 所有内容都保存在浏览器本地存储中，刷新页面后仍会保留。
 
+## 和原版的区别
 
-## 利用
- - 动画信息来自 番组计划 https://bangumi.tv/
+- 原版主要是搜索动画并选择封面。
+- 当前版本改成了本地保存的创作型编辑器，更适合做猜番、抽象概括、主题整理和个人梗图表。
 
-禁止 商业、盈利 相关利用
+## 使用方式
+
+1. 打开 `html/index.html` 或 `html/ex.html`
+2. 点击任意格子进入编辑
+3. 插入 emoji 或文本框
+4. 拖动和缩放元素，组合出自己的谜面
+5. 选填答案备注
+6. 导出图片分享
+
+## 文件说明
+
+- `html/index.html`：标准版入口
+- `html/ex.html`：扩展版入口
+- `html/anime-grid.js`：核心交互逻辑
+- `html/document.css`：页面样式
+- `html/document.less`：样式同步版本
+
+## 原项目
+
+- 原始项目仓库：https://github.com/itorr/anime-grid
+
+## 当前仓库
+
+- 当前仓库地址：https://github.com/zmjkk1/anime-grid-emoji
