@@ -6,6 +6,7 @@ const STAGE_H = 460;
 const STAGE_PAD = 18;
 const CELL_HEIGHT = 187;
 const CELL_WIDTH = 120;
+const PROJECT_URL = 'https://zmjkk1.github.io/anime-grid-emoji';
 const clamp = (v, min, max) => Math.min(max, Math.max(min, v));
 const uid = () => `emoji-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
 const escapeHTML = text => String(text || '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
@@ -1013,6 +1014,8 @@ class AnimeGrid {
         ctx.fillStyle = '#767676';
         ctx.font = `12px ${TEXT_FONT}`;
         ctx.fillText(this.showAnswers ? '当前导出模式：答案显示版' : '当前导出模式：猜番隐藏答案版', bodyMargin, height - 10);
+        ctx.textAlign = 'right';
+        ctx.fillText(PROJECT_URL, width - bodyMargin, height - 10);
         ctx.translate(bodyMargin, bodyMargin + titleHeight);
         ctx.strokeStyle = '#222';
         ctx.lineWidth = 2;
