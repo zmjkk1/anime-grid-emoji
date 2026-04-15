@@ -6,7 +6,7 @@ const STAGE_H = 460;
 const STAGE_PAD = 18;
 const CELL_HEIGHT = 187;
 const CELL_WIDTH = 120;
-const PROJECT_URL = 'https://zmjkk1.github.io/anime-grid-emoji';
+const PROJECT_URL = 'https://zmjkk1.github.io/anime-grid-emoji/html';
 const clamp = (v, min, max) => Math.min(max, Math.max(min, v));
 const uid = () => `emoji-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
 const escapeHTML = text => String(text || '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
